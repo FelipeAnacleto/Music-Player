@@ -62,7 +62,7 @@ body {
 
 /* both range slider part */
 input[type="range"] {
-	-webkit-appearance: none;
+	appearance: none;
 	width: 50%;
 	outline: none;
 	height: 10px;

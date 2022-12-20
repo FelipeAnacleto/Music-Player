@@ -28,13 +28,13 @@ let All_song = [
         name: "first song",
         path: "music/song1.mp3",
         img: "img/img1.jpg",
-        singer: "first singer"
+        singer: "1"
     },
     {
         name: "Unstoppable",
         path: "music/song2.mp3",
         img: "img/img2.jpg",
-        singer: "second singer"
+        singer: "2"
     }
 ];
 
