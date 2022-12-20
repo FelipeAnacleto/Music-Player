@@ -103,3 +103,11 @@ function previous_song() {
         playing_song();
     }
 }
+
+// change volume
+function volume_change() {
+	volume_show.innerHTML = recent_volume.value;
+	track.volume = recent_volume.value / 100;
+}
+
+//
