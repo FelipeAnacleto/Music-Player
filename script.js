@@ -50,6 +50,7 @@ function load_track(index_no) {
 
     total.innerHTML = All_song.length;
     present.innerHTML = index_no + 1;
+    timer = setInterval(ranger_slider, 1000)
 }
 
 load_track(index_no);
@@ -108,6 +109,23 @@ function previous_song() {
 function volume_change() {
 	volume_show.innerHTML = recent_volume.value;
 	track.volume = recent_volume.value / 100;
+    if (recent_volume.value > 40) {
+        alert(`Volume esta em ${recent_volume.value} pode causar perda auditiva \n Volume padrão é de 50`);
+    }
 }
 
-//
+// change slider position
+function change_duration() {
+    slider_position = track.duration * (slider.value / 100);
+    track.currentTime = slider_position;
+}
+
+function ranger_slider() {
+    let position = 0;
+
+    // Update slider position
+    if(!isNaN(track.duration)) {
+        position = track.currentTime * (100/ track.duration);
+        slider.value.position;
+    }
+}
